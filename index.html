@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google fonts Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="shortcut icon" href="assets/9.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- -----tailwind custom style-- -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "primary-color": "#FF4240",
+            "title-color": "#131318",
+            "desc-color": "rgba(19, 19, 24, 0.60)",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- ------custom styles--- -->
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+      font-style: normal;
+    }
+  </style>
+  <title>Hockey</title>
+</head>
+
+<body class="font-manrope">
+  <nav class="container mx-auto sticky top-0 z-50">
+    <div class="bg-base-100 flex justify-between items-center lg:py-2">
+      <div class="flex items-center">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-1.5 z-[1] p-4 shadow bg-base-100 rounded-box w-52 text-base  font-bold">
+            <li><a class="text-primary-color">Home</a></li>
+            <li><a class="text-[#424247]">About</a></li>
+            <li><a class="text-[#424247]">Pages</a></li>
+            <li><a class="text-[#424247]">Blog</a></li>
+            <li><a class="text-[#424247]">Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-2xl lg:text-4xl text-title-color font-extrabold cursor-pointer">Hockey<span
+            class="text-primary-color">’</span>s</a>
+      </div>
+      <div class="menu">
+        <ul class="hidden lg:flex text-base font-normal">
+          <li><a class="text-primary-color font-bold">Home</a></li>
+          <li><a class="text-[#424247]">About</a></li>
+          <li><a class="text-[#424247]">Pages</a></li>
+          <li><a class="text-[#424247]">Blog</a></li>
+          <li><a class="text-[#424247]">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu flex flex-row gap-2">
+        <button class="hidden btn btn-ghost btn-circle md:flex lg:flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_5_6)">
+              <path
+                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_5_6">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          </svg>
+        </button>
+        <button class="btn btn-error bg-primary-color text-white text-base lg:text-xl font-bold">
+          Get Ticket
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- ------Banner carousel section--- -->
+  <header class="container mx-auto my-8">
+    <div class="carousel w-full lg:h-[80vh]">
+      <!-- slide 1 -->
+      <div id="slide1" class="carousel-item relative h-full w-full">
+        <div class="mx-5 md:mx-0 lg:mx-0 w-full relative z-0 h-full">
+          <img src="assets/1.png" class="w-full h-full" />
+          <div
+            class="mt-4 md:absolute lg:absolute md:right-4 lg:right-6 md:bottom-4 lg:bottom-6 p-4 lg:p-8 bg-title-color z-10 rounded-2xl md:w-[400px] lg:w-[500px] space-y-4">
+            <h3 class="text-white text-base lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim
+              adipiscing aliquam turpis placerat dolor. Purus urna in sit
+              nullam proin. 1</p>
+          </div>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 top-1/3 right-5 lg:left-5 lg:right-5 lg:top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div id="slide2" class="carousel-item relative h-full w-full">
+        <div class="mx-5 md:mx-0 lg:mx-0 w-full relative z-0 h-full">
+          <img src="assets/2.png" class="w-full h-full" />
+          <div
+            class="mt-4 md:absolute lg:absolute md:right-4 lg:right-6 md:bottom-4 lg:bottom-6 p-4 lg:p-8 bg-title-color z-10 rounded-2xl md:w-[400px] lg:w-[500px] space-y-4">
+            <h3 class="text-white text-base lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim
+              adipiscing aliquam turpis placerat dolor. Purus urna in sit
+              nullam proin. 2</p>
+          </div>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 top-1/3 right-5 lg:left-5 lg:right-5 lg:top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div id="slide3" class="carousel-item relative h-full w-full">
+        <div class="mx-5 md:mx-0 lg:mx-0 w-full relative z-0 h-full">
+          <img src="assets/3.png" class="w-full h-full" />
+          <div
+            class="mt-4 md:absolute lg:absolute md:right-4 lg:right-6 md:bottom-4 lg:bottom-6 p-4 lg:p-8 bg-title-color z-10 rounded-2xl md:w-[400px] lg:w-[500px] space-y-4">
+            <h3 class="text-white text-base lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim
+              adipiscing aliquam turpis placerat dolor. Purus urna in sit
+              nullam proin. 3</p>
+          </div>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 top-1/3 right-5 lg:left-5 lg:right-5 lg:top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 4 -->
+      <div id="slide4" class="carousel-item relative h-full w-full">
+        <div class="mx-5 md:mx-0 lg:mx-0 w-full relative z-0 h-full">
+          <img src="assets/4.png" class="w-full h-full" />
+          <div
+            class="mt-4 md:absolute lg:absolute md:right-4 lg:right-6 md:bottom-4 lg:bottom-6 p-4 lg:p-8 bg-title-color z-10 rounded-2xl md:w-[400px] lg:w-[500px] space-y-4">
+            <h3 class="text-white text-base lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim
+              adipiscing aliquam turpis placerat dolor. Purus urna in sit
+              nullam proin. 4</p>
+          </div>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 top-1/3 right-5 lg:left-5 lg:right-5 lg:top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- -------Main Content----- -->
+
+</body>
+
+</html>
