@@ -42,7 +42,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For inquiries and support, please email us at [info@hockeylegend.com](mailto:info@hockeylegend.com).
+For inquiries and support, please email us at [Nayon](mailto:nrbnayon@gmail.com).
 
 ---
 
